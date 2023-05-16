@@ -37,5 +37,7 @@ extension HomeVC: UITableViewDelegate, UITableViewDataSource {
         return cell ?? UITableViewCell()
     }
     
-    
+    func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+        return viewModel.heightForRowAt(indexpath: indexPath)
+    }
 }

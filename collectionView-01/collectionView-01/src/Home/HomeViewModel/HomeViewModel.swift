@@ -12,4 +12,8 @@ class HomeViewModel {
     public var numberOfRowsInSection: Int {
        return 3
     }
+    
+    public func heightForRowAt(indexpath: IndexPath) -> CGFloat {
+        return 150
+    }
 }

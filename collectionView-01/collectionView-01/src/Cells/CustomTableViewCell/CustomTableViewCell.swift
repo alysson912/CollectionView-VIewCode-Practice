@@ -28,7 +28,7 @@ class CustomTableViewCell: UITableViewCell {
     }
     
     private func addViews(){
-        addSubview(screen)
+        contentView.addSubview(screen)
     }
     
     private func configConstraints(){
