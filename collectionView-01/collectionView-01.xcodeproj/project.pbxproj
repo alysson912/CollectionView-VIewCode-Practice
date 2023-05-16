@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3853D36C2A143B160069C5D6 /* HomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3853D36B2A143B160069C5D6 /* HomeViewModel.swift */; };
+		3853D3712A143BAD0069C5D6 /* CustomTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3853D3702A143BAD0069C5D6 /* CustomTableViewCell.swift */; };
+		3853D3732A143BCF0069C5D6 /* CustomCustomTableViewCellScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3853D3722A143BCF0069C5D6 /* CustomCustomTableViewCellScreen.swift */; };
 		38A112312A106A8A005816D0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38A112302A106A8A005816D0 /* AppDelegate.swift */; };
 		38A112332A106A8A005816D0 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38A112322A106A8A005816D0 /* SceneDelegate.swift */; };
 		38A112352A106A8A005816D0 /* HomeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38A112342A106A8A005816D0 /* HomeVC.swift */; };
@@ -16,6 +19,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		3853D36B2A143B160069C5D6 /* HomeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewModel.swift; sourceTree = "<group>"; };
+		3853D3702A143BAD0069C5D6 /* CustomTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTableViewCell.swift; sourceTree = "<group>"; };
+		3853D3722A143BCF0069C5D6 /* CustomCustomTableViewCellScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomCustomTableViewCellScreen.swift; sourceTree = "<group>"; };
 		38A1122D2A106A8A005816D0 /* collectionView-01.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "collectionView-01.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		38A112302A106A8A005816D0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		38A112322A106A8A005816D0 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -37,6 +43,39 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		3853D36A2A143AE50069C5D6 /* HomeViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				3853D36B2A143B160069C5D6 /* HomeViewModel.swift */,
+			);
+			path = HomeViewModel;
+			sourceTree = "<group>";
+		};
+		3853D36D2A143B730069C5D6 /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				3853D36E2A143B7B0069C5D6 /* CustomTableViewCell */,
+			);
+			path = Cells;
+			sourceTree = "<group>";
+		};
+		3853D36E2A143B7B0069C5D6 /* CustomTableViewCell */ = {
+			isa = PBXGroup;
+			children = (
+				3853D36F2A143B8D0069C5D6 /* Screen */,
+				3853D3702A143BAD0069C5D6 /* CustomTableViewCell.swift */,
+			);
+			path = CustomTableViewCell;
+			sourceTree = "<group>";
+		};
+		3853D36F2A143B8D0069C5D6 /* Screen */ = {
+			isa = PBXGroup;
+			children = (
+				3853D3722A143BCF0069C5D6 /* CustomCustomTableViewCellScreen.swift */,
+			);
+			path = Screen;
+			sourceTree = "<group>";
+		};
 		38A112242A106A8A005816D0 = {
 			isa = PBXGroup;
 			children = (
@@ -69,6 +108,7 @@
 		38A112442A106ACE005816D0 /* src */ = {
 			isa = PBXGroup;
 			children = (
+				3853D36D2A143B730069C5D6 /* Cells */,
 				38A112452A106ADD005816D0 /* Home */,
 			);
 			path = src;
@@ -77,6 +117,7 @@
 		38A112452A106ADD005816D0 /* Home */ = {
 			isa = PBXGroup;
 			children = (
+				3853D36A2A143AE50069C5D6 /* HomeViewModel */,
 				38A112472A106AF1005816D0 /* HomeScreen */,
 				38A112462A106AE8005816D0 /* HomeVC */,
 			);
@@ -169,9 +210,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3853D3712A143BAD0069C5D6 /* CustomTableViewCell.swift in Sources */,
 				38A112492A106B2F005816D0 /* HomeScreen.swift in Sources */,
 				38A112352A106A8A005816D0 /* HomeVC.swift in Sources */,
 				38A112312A106A8A005816D0 /* AppDelegate.swift in Sources */,
+				3853D3732A143BCF0069C5D6 /* CustomCustomTableViewCellScreen.swift in Sources */,
+				3853D36C2A143B160069C5D6 /* HomeViewModel.swift in Sources */,
 				38A112332A106A8A005816D0 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

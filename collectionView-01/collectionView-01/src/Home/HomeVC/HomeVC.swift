@@ -10,6 +10,7 @@ import UIKit
 class HomeVC: UIViewController {
 
     private var screen: HomeScreen?
+    private var viewModel = HomeViewModel()
     
     override func loadView() {
         screen = HomeScreen()
@@ -18,9 +19,23 @@ class HomeVC: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
+        screen?.configProtocolsTableView(delegate: self, dataSource: self)
     }
 
 
 }
 
+extension HomeVC: UITableViewDelegate, UITableViewDataSource {
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return viewModel.numberOfRowsInSection
+    }
+    
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        
+        let cell = tableView.dequeueReusableCell(withIdentifier: CustomTableViewCell.identifier, for: indexPath) as? CustomTableViewCell
+        
+        return cell ?? UITableViewCell()
+    }
+    
+    
+}
